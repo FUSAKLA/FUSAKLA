@@ -5,73 +5,82 @@
     <title>FUSAKLA</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
- 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFX9TZXXWQ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-RFX9TZXXWQ');
-    </script>  
-    
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+
     <!-- Lets embed all the CSS right in the HTML! -->
     <style>
         body {
-            font-family: 'Roboto Slab', serif;
+            font-family: 'Annie Use Your Telescope', cursive;
         }
-        #socks {
-        	position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: -1000;
+
+        html {
+            width: 100%;
+            height: 100%;
         }
-        #tell-me-more {
-        	position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 1000;
-            display: none;
+
+        .centered {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-        .centered-text {
+
+        .image-cropper {
+            width: 300px;
+            height: 300px;
+            position: absolute;
             margin: auto;
-            text-align: center;
+            overflow: hidden;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+            /* Half the height */
+            margin-left: -150px;
+            /* Half the width */
+        }
+
+        img {
             position: relative;
-            top: 50pt;
+            display: block;
+            margin: 0 auto;
+            height: 100%;
+            width: auto;
         }
-        .fake-link{
-        	color: blue;
+
+        #name {
+            position: relative;
+            top: 210px;
+            font-size: 6em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
         }
     </style>
-
-
-
-    <!-- And if you embed all the CSS why not embeding also the javascript?!?! -->
-    <script>
-        function showMeme() {
-          document.getElementById("tell-me-more").style.display = "block";
-        };
-        function hideMeme() {
-          document.getElementById("tell-me-more").style.display = "none";
-        };
-    </script>
-
 </head>
 
 <body>
-    <h1 class="centered-text">Not what you're looking for?</h1>
-    <h3 class="centered-text fake-link" onmouseover="showMeme()" onmouseout="hideMeme()">Tell me more about it</h3>
-
-    <img id="socks" src="img/socks.jpg">
-    <img id="tell-me-more" src="img/tell-me-more.jpg">
-
+    <div class="centered">
+        <div class="image-cropper">
+            <img src="./img/elektroma.jpg" class="rounded" />
+        </div>
+        <p id="name"><a href="https://github.com/FUSAKLA">FUSAKLA</a></p>
+    </div>
 </body>
 
 </html>
