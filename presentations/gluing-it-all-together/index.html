@@ -4,12 +4,17 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Presentations</title>
+    <title>Gluing it all together aka building a platform around Prometheus</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://fusakla.cz/img/favicon.ico">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://fusakla.cz/presentations/gluing-it-all-together/preview.png">
+    <meta name="twitter:creator" content="@FUSAKLA">
+    <meta name="twitter:title" content="Gluing it all together aka building a platform around Prometheus">
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,30 +30,30 @@
     <style>
         body {
             font-family: 'Annie Use Your Telescope', cursive;
-            margin: 10em;
         }
 
-        h1 {
-            font-size: 5em;
-        }
-
-        li {
-            font-size: 3em;
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 999999;
         }
     </style>
 </head>
 
 <body>
-    <h1>Presentations</h1>
-    <ul>
-        <li><a href="./brief-illustrated-history-of-prometheus/">A brief illustrated history of Prometheus</a> (<a
-                href="./brief-illustrated-history-of-prometheus/brief-illustrated-history-of-prometheus.pdf">PDF</a>)
-        </li>
-        <li><a href="./service-level-objectives/">Service Level Objectives</a> (<a
-                href="./service-level-objectives/service-level-objectives.pdf">PDF</a>)</li>
-        <li><a href="./service-level-objectives/">Gluing it all together aka building a platform around Prometheus</a> (<a
-                href="./gluing-it-all-together/gluing-it-all-together.pdf">PDF</a>)</li>
-    </ul>
+    <iframe
+        src="https://docs.google.com/presentation/d/1vT_E5GPZM3HfeeqBJodyGFqybq8BpxMf7hA7if1YtbQ/pub?start=false&loop=false&delayms=5000"
+        frameborder="0" width="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    </iframe>
 </body>
 
 </html>
